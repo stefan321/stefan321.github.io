@@ -120,6 +120,16 @@
     <p>stefan321 by youself.</p>
 
     
+        <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+    
     <div id="comment-container">
     </div>
     <div id="lv-container">
@@ -179,6 +189,22 @@
 <script src="/js/index.js"></script>
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script src="/js/gitment.js"></script>
+
+<script>
+    var gitment = new Gitment({
+        id: 'About',
+        owner: 'stefan321',
+        repo: 'stefan321.github.io',
+        oauth: {
+            client_id: 'beae2f73d5157375597c',
+            client_secret: '1c2321c6b3e0ecb31986cc9d253cfc35b5459ef6',
+        },
+    })
+    gitment.render('comment-container')
+</script>
 
 
 
